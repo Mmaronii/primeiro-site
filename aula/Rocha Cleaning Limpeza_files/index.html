@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt,br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocha cleaning</title>
+    <style>
+        body {
+             background: linear-gradient(to bottom, #3498db, #ffffff);
+            color: #ffffff;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 {
+            margin: 10px 0;
+            padding: 20px;
+            color: #ffffff;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        label, input {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Seja Bem Vindo</h2>
+    <img src="eu.jpg" width="200" height="200">
+    <p>Não tem um cadastro? <form action="cadastro.html" method="get"><button type="submit">Cadastre-se</button></form></p>
+    <form action="/processar-formulario" method="post">
+        <!-- Campo de Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Seu Email" required>
+
+        <!-- Campo de Senha -->
+        <label for="senha">Senha:</label>
+        <input type="senha" id="senha" name="senha" placeholder="Digite a senha" required>
+
+        <!-- Botão de Entrar -->
+        <input type="submit" value="Entrar">
+    </form>
+</body>
+</html>
